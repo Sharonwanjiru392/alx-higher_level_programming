@@ -1,15 +1,9 @@
 #!/usr/bin/python3
 
+if __name__ == "__main__":
+    """Print the sum of 1 and 2."""
+    from add_0 import add
 
-def magic_calculation(a, b):
-    """Match bytecode provided by Holberton School."""
-    from magic_calculation_102 import add, sub
-
-    if a < b:
-        c = add(a, b)
-        for i in range(4, 6):
-            c = add(c, i)
-        return (c)
-
-    else:
-        return(sub(a, b))
+    a = 1
+    b = 2
+    print("{} + {} = {}".format(a, b, add(a, b)))
