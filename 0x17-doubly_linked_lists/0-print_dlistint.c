@@ -14,6 +14,7 @@ size_t dlistint_len(const dlistint_t *h)
 
 	while (current != NULL)
 	{
+		printf("%i\n", current->n);
 		current = current->next;
 		nbr_nodes++;
 	}
