@@ -1,18 +1,14 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include "../hash_tables.h"
+#!/usr/bin/python3
+lookup = __import__('0-lookup').lookup
 
-/**
- * main - check the code for ALX-Africa Cohort 5 Students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-	hash_table_t *ht;
+class MyClass1(object):
+    pass
 
-	ht = hash_table_create(1024);
-	printf("%p\n", (void *)ht);
-	return (EXIT_SUCCESS);
-}
+class MyClass2(object):
+    my_attr1 = 3
+    def my_meth(self):
+        pass
+
+print(lookup(MyClass1))
+print(lookup(MyClass2))
+print(lookup(int))
