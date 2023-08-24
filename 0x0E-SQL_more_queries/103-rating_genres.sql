@@ -1,8 +1,10 @@
--- displays the top 3 of cities temperature during July and August 
-
--- display the temperatures
-SELECT city, AVG(value) AS avg_temp FROM temperatures
-WHERE month = 7 OR month = 8
-GROUP BY city
-ORDER BY avg_temp DESC
-LIMIT 3;
+-- Use left JOIN list the best genrer
+-- Execute: cat 103-rating_genres.sql | mysql -hlocalhost -uroot -p hbtn-0d_tvshows_rate
+SELECT tv_genres.name, SUM(tv_show_ratings.rate) AS rating
+FROM tv_genres
+INNER JOIN tv_show_genres
+ON tv_genres.id = tv_show_genres.genre_id
+INNER JOIN tv_show_ratings
+ON tv_show_genres.show_id = tv_show_ratings.show_id
+GROUP BY tv_genres.name
+ORDER BY 2 DESC;
