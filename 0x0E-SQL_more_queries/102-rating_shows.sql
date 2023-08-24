@@ -1,8 +1,9 @@
--- displays the top 3 of cities temperature during July and August 
-
--- display the temperatures
-SELECT city, AVG(value) AS avg_temp FROM temperatures
-WHERE month = 7 OR month = 8
-GROUP BY city
-ORDER BY avg_temp DESC
-LIMIT 3;
+-- Function SUM
+-- Execute: cat 102-rating_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate
+SELECT
+tv_shows.title, SUM(tv_show_ratings.rate) AS rating
+FROM tv_shows
+LEFT JOIN tv_show_ratings
+ON tv_shows.id = tv_show_ratings.show_id
+GROUP BY tv_shows.title
+ORDER BY 2 DESC;
