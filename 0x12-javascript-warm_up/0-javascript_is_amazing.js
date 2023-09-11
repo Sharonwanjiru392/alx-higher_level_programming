@@ -1,4 +1,4 @@
 #!/usr/bin/node
-
-const myvar = 'JavaScript is amizing';
+// print string "Javascript is amizing"
+const myvar = 'Javascript is amizing';
 console.log(myvar);
