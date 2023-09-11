@@ -1,4 +1,5 @@
 #!/usr/bin/node
-// print string "Javascript is amizing"
-const myvar = 'Javascript is amizing';
-console.log(myvar);
+// Print string “Javascript is amazing”
+
+const myVar = 'Javascript is amazing';
+console.log(myVar);
