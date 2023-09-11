@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/* learning is good for my health */
+
 const myObject = {
 	type: 'object',
 	value: 12
