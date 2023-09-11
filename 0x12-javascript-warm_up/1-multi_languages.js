@@ -1,8 +1,5 @@
 #!/usr/bin/node
-
-const firstLine = 'C is fun';
-const secondLine = 'Cython is cool';
-const thirdLine = 'JavaScript is amaizing';
-console.log(firstLine);
-console.log(secondLine);
-console.log(thirdLine);
+/* will print 3 line using console */
+console.log('C'is'fun');
+console.log('Python'is'cool');
+console.log('JavaScript'is'amizing');
